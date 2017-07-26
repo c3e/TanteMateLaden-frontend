@@ -3,18 +3,38 @@
 
 <head>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="assets/vendor.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/css/materialize.min.css">
     <link rel="icon" href="favicon.png">
     <link rel="manifest" href="manifest.json">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#e57373">
     <meta name="mobile-web-app-capable" content="yes">
+    <meta charset="utf-8">
     <title>TanteMateLaden</title>
 </head>
 
 <body>
-    
-    <script type="text/javascript" src="assets/vendor.js"></script>
+    <nav>
+        <div class="nav-wrapper">
+            <a href="/" class="brand-logo">TanteMateLaden</a>
+            <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="account.html">Account</a></li>
+                <li><a href="drinks.html">Getränke</a></li>
+                <li><a href="transactions.html" class="hide admin">Transaktionen</a></li>
+            </ul>
+            <ul class="side-nav" id="mobile-demo">
+                <li><a href="account.html">Account</a></li>
+                <li><a href="drinks.html">Getränke</a></li>
+                <li><a href="transactions.html" class="hide admin">Transaktionen</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div id="app"></div>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js"></script>
+    <script type="text/javascript" src="assets/common.js"></script>
+    <script src="assets/index.js"></script>
 </body>
 
 </html>
